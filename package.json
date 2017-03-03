@@ -1,0 +1,22 @@
+{
+  "name": "rw",
+  "version": "1.0.0",
+  "description": "manager version ",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tautorn/lerna-manager.git"
+  },
+  "keywords": [
+    "lerna"
+  ],
+  "author": "brunocarneirofs@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tautorn/lerna-manager/issues"
+  },
+  "homepage": "https://github.com/Tautorn/lerna-manager#readme"
+}
