@@ -1,0 +1,155 @@
+lerna(verbose) GitUtilities.isInitialized    ()
+lerna(verbose) GitUtilities.isInitialized    () => true
+lerna(verbose) GitUtilities.getTopLevelDirectory()
+lerna(verbose) GitUtilities.getTopLevelDirectory() => "/home/tautorn/Desktop/Projects/lerna-manager"
+lerna(verbose) FileSystemUtilities.existsSync("/home/tautorn/Desktop/Projects/lerna-manager/lerna.json")
+lerna(verbose) FileSystemUtilities.existsSync("/home/tautorn/Desktop/Projects/lerna-manager/lerna.json") => true
+lerna(verbose) FileSystemUtilities.readFileSync("/home/tautorn/Desktop/Projects/lerna-manager/lerna.json")
+lerna(verbose) FileSystemUtilities.readFileSync("/home/tautorn/Desktop/Projects/lerna-manager/lerna.json") => "{\n  \"lerna\": \"2.0.0-beta.38\",\n  \"packages\": [\n    \"packages/*\"\n  ],\n  \"version\": \"0.0.1\"\n}"
+lerna(verbose) FileSystemUtilities.existsSync("/home/tautorn/Desktop/Projects/lerna-manager/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("/home/tautorn/Desktop/Projects/lerna-manager/package.json") => true
+lerna(verbose) FileSystemUtilities.readFileSync("/home/tautorn/Desktop/Projects/lerna-manager/package.json")
+lerna(verbose) FileSystemUtilities.readFileSync("/home/tautorn/Desktop/Projects/lerna-manager/package.json") => "{\n  \"devDependencies\": {\n    \"lerna\": \"2.0.0-beta.38\"\n  }\n}"
+lerna(info)    Lerna v2.0.0-beta.38
+lerna(verbose) FileSystemUtilities.existsSync("/home/tautorn/Desktop/Projects/lerna-manager/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("/home/tautorn/Desktop/Projects/lerna-manager/package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("/home/tautorn/Desktop/Projects/lerna-manager/lerna.json")
+lerna(verbose) FileSystemUtilities.existsSync("/home/tautorn/Desktop/Projects/lerna-manager/lerna.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("/home/tautorn/Desktop/Projects/lerna-manager/VERSION")
+lerna(verbose) FileSystemUtilities.existsSync("/home/tautorn/Desktop/Projects/lerna-manager/VERSION") => false
+lerna(verbose) FileSystemUtilities.existsSync("./client-1/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./client-1/package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./core/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./core/package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./dota/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./dota/package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./page/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./page/package.json") => true
+lerna(verbose) Attempting running PublishCommand.initialize
+lerna(verbose) GitUtilities.getCurrentBranchDescription()
+lerna(verbose) GitUtilities.getCurrentBranchDescription() => "master"
+lerna(info)    Current version: 0.0.1
+lerna(info)    Checking for updated packages...
+lerna(verbose) GitUtilities.hasTags          ()
+lerna(verbose) GitUtilities.hasTags          () => true
+lerna(verbose) GitUtilities.getLastTag       ()
+lerna(verbose) GitUtilities.getLastTag       () => "v0.0.1"
+lerna(info)    Comparing with: v0.0.1
+lerna(verbose) GitUtilities.getLastTaggedCommitInBranch()
+lerna(verbose) GitUtilities.getLastTag       ()
+lerna(verbose) GitUtilities.getLastTag       () => "v0.0.1"
+lerna(verbose) GitUtilities.getLastTaggedCommitInBranch() => "1ed0654df1e49cd4cefb93ebb4ef5b832062c8e4"
+lerna(verbose) GitUtilities.describeTag      ("1ed0654df1e49cd4cefb93ebb4ef5b832062c8e4")
+lerna(verbose) GitUtilities.describeTag      ("1ed0654df1e49cd4cefb93ebb4ef5b832062c8e4") => "v0.0.1"
+lerna(verbose) GitUtilities.diffSinceIn      ("v0.0.1", "./core")
+lerna(verbose) GitUtilities.diffSinceIn      ("v0.0.1", "./core") => "packages/core/index.js"
+lerna(verbose) GitUtilities.diffSinceIn      ("v0.0.1", "./dota")
+lerna(verbose) GitUtilities.diffSinceIn      ("v0.0.1", "./dota") => ""
+lerna(verbose) GitUtilities.diffSinceIn      ("v0.0.1", "./page")
+lerna(verbose) GitUtilities.diffSinceIn      ("v0.0.1", "./page") => ""
+lerna(info)    Changes:
+lerna(info)    - core: 0.0.1 => 0.0.2
+- dota: 0.0.1 => 0.0.2
+lerna(verbose) Successfully ran PublishCommand.initialize
+lerna(verbose) Attempting running PublishCommand.execute
+lerna(verbose) FileSystemUtilities.writeFileSync("/home/tautorn/Desktop/Projects/lerna-manager/lerna.json", "{\n  \"lerna\": \"2.0.0-beta.38\",\n  \"...)
+lerna(verbose) FileSystemUtilities.writeFileSync("/home/tautorn/Desktop/Projects/lerna-manager/lerna.json", "{\n  \"lerna\": \"2.0.0-beta.38\",\n  \"...) => 
+lerna(verbose) GitUtilities.addFile          ("/home/tautorn/Desktop/Projects/lerna-manager/lerna.json")
+lerna(verbose) GitUtilities.addFile          ("/home/tautorn/Desktop/Projects/lerna-manager/lerna.json") => 
+lerna(verbose) FileSystemUtilities.writeFileSync("./core/package.json", "{\n  \"name\": \"core\",\n  \"version\": \"0.0.2\",\n  \"description\": \"\"...)
+lerna(verbose) FileSystemUtilities.writeFileSync("./core/package.json", "{\n  \"name\": \"core\",\n  \"version\": \"0.0.2\",\n  \"description\": \"\"...) => 
+lerna(verbose) FileSystemUtilities.writeFileSync("./dota/package.json", "{\n  \"name\": \"dota\",\n  \"version\": \"0.0.2\",\n  \"description\": \"\"...)
+lerna(verbose) FileSystemUtilities.writeFileSync("./dota/package.json", "{\n  \"name\": \"dota\",\n  \"version\": \"0.0.2\",\n  \"description\": \"\"...) => 
+lerna(verbose) GitUtilities.addFile          ("./core/package.json", 0, ["./core/package.json","/home/tautorn/Desktop/Projects/lerna-manager/packa...)
+lerna(verbose) GitUtilities.addFile          ("./core/package.json", 0, ["./core/package.json","/home/tautorn/Desktop/Projects/lerna-manager/packa...) => 
+lerna(verbose) GitUtilities.addFile          ("./dota/package.json", 1, ["./core/package.json","/home/tautorn/Desktop/Projects/lerna-manager/packa...)
+lerna(verbose) GitUtilities.addFile          ("./dota/package.json", 1, ["./core/package.json","/home/tautorn/Desktop/Projects/lerna-manager/packa...) => 
+lerna(verbose) GitUtilities.commit           ("v0.0.2")
+lerna(verbose) GitUtilities.commit           ("v0.0.2") => 
+lerna(verbose) GitUtilities.addTag           ("v0.0.2")
+lerna(verbose) GitUtilities.addTag           ("v0.0.2") => 
+lerna(info)    Publishing packages to npm...
+lerna(verbose) FileSystemUtilities.existsSync("./core/scripts/prepublish.js")
+lerna(verbose) FileSystemUtilities.existsSync("./core/scripts/prepublish.js") => false
+lerna(verbose) No prepublish script found at /home/tautorn/Desktop/Projects/lerna-manager/packages/core/scripts/prepublish.js
+lerna(verbose) FileSystemUtilities.existsSync("./dota/scripts/prepublish.js")
+lerna(verbose) FileSystemUtilities.existsSync("./dota/scripts/prepublish.js") => false
+lerna(verbose) No prepublish script found at /home/tautorn/Desktop/Projects/lerna-manager/packages/dota/scripts/prepublish.js
+lerna(verbose) Publishing core...
+lerna(verbose) NpmUtilities.publishTaggedInDir("lerna-temp", "./core", )
+lerna(error)   NpmUtilities.publishTaggedInDir("lerna-temp", "./core", )
+    Error: Command failed: /bin/sh -c cd /home/tautorn/Desktop/Projects/lerna-manager/packages/core && npm publish --tag lerna-temp
+    npm ERR! Linux 4.4.0-66-generic
+    npm ERR! argv "/home/tautorn/.nvm/versions/node/v4.2.6/bin/node" "/home/tautorn/.nvm/versions/node/v4.2.6/bin/npm" "publish" "--tag" "lerna-temp"
+    npm ERR! node v4.2.6
+    npm ERR! npm  v2.14.12
+    npm ERR! code ENEEDAUTH
+    
+    npm ERR! need auth auth required for publishing
+    npm ERR! need auth You need to authorize this machine using `npm adduser`
+    
+    npm ERR! Please include the following file with any support request:
+    npm ERR!     /home/tautorn/Desktop/Projects/lerna-manager/packages/core/npm-debug.log
+    
+        at ChildProcess.exithandler (child_process.js:213:12)
+        at emitTwo (events.js:87:13)
+        at ChildProcess.emit (events.js:172:7)
+        at maybeClose (internal/child_process.js:821:16)
+        at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+lerna(error)   Attempting to retry publishing core...
+    Error: Command failed: /bin/sh -c cd /home/tautorn/Desktop/Projects/lerna-manager/packages/core && npm publish --tag lerna-temp
+    npm ERR! Linux 4.4.0-66-generic
+    npm ERR! argv "/home/tautorn/.nvm/versions/node/v4.2.6/bin/node" "/home/tautorn/.nvm/versions/node/v4.2.6/bin/npm" "publish" "--tag" "lerna-temp"
+    npm ERR! node v4.2.6
+    npm ERR! npm  v2.14.12
+    npm ERR! code ENEEDAUTH
+    
+    npm ERR! need auth auth required for publishing
+    npm ERR! need auth You need to authorize this machine using `npm adduser`
+    
+    npm ERR! Please include the following file with any support request:
+    npm ERR!     /home/tautorn/Desktop/Projects/lerna-manager/packages/core/npm-debug.log
+    
+        at ChildProcess.exithandler (child_process.js:213:12)
+        at emitTwo (events.js:87:13)
+        at ChildProcess.emit (events.js:172:7)
+        at maybeClose (internal/child_process.js:821:16)
+        at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+lerna(verbose) Publishing core...
+lerna(verbose) NpmUtilities.publishTaggedInDir("lerna-temp", "./core", )
+lerna(error)   NpmUtilities.publishTaggedInDir("lerna-temp", "./core", )
+lerna(error)   Attempting to retry publishing core...
+lerna(verbose) Publishing core...
+lerna(verbose) NpmUtilities.publishTaggedInDir("lerna-temp", "./core", )
+lerna(error)   NpmUtilities.publishTaggedInDir("lerna-temp", "./core", )
+lerna(error)   Attempting to retry publishing core...
+    Error: Command failed: /bin/sh -c cd /home/tautorn/Desktop/Projects/lerna-manager/packages/core && npm publish --tag lerna-temp
+    npm ERR! Linux 4.4.0-66-generic
+    npm ERR! argv "/home/tautorn/.nvm/versions/node/v4.2.6/bin/node" "/home/tautorn/.nvm/versions/node/v4.2.6/bin/npm" "publish" "--tag" "lerna-temp"
+    npm ERR! node v4.2.6
+    npm ERR! npm  v2.14.12
+    npm ERR! code ENEEDAUTH
+    
+    npm ERR! need auth auth required for publishing
+    npm ERR! need auth You need to authorize this machine using `npm adduser`
+    
+    npm ERR! Please include the following file with any support request:
+    npm ERR!     /home/tautorn/Desktop/Projects/lerna-manager/packages/core/npm-debug.log
+    
+        at ChildProcess.exithandler (child_process.js:213:12)
+        at emitTwo (events.js:87:13)
+        at ChildProcess.emit (events.js:172:7)
+        at maybeClose (internal/child_process.js:821:16)
+        at Socket.<anonymous> (internal/child_process.js:319:11)
+        at emitOne (events.js:77:13)
+        at Socket.emit (events.js:169:7)
+        at Pipe._onclose (net.js:469:12)
+lerna(verbose) Publishing core...
+lerna(verbose) NpmUtilities.publishTaggedInDir("lerna-temp", "./core", )
+lerna(error)   NpmUtilities.publishTaggedInDir("lerna-temp", "./core", )
+lerna(error)   Attempting to retry publishing core...
+lerna(verbose) Publishing core...
+lerna(verbose) NpmUtilities.publishTaggedInDir("lerna-temp", "./core", )
+lerna(error)   NpmUtilities.publishTaggedInDir("lerna-temp", "./core", )
+lerna(error)   Ran out of retries while publishing core
+lerna(error)   Errored while running PublishCommand.execute
